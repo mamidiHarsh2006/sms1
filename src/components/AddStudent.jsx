@@ -34,7 +34,7 @@ function AddStudent() {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/students', formData);
+      await axios.post('https://sms-uagq.onrender.com/students', formData);
       navigate('/students');
     } catch (error) {
       console.error('Error submitting form:', error);
